@@ -1,0 +1,149 @@
+/* CSS generator found here: http://www.cssportal.com/css3-rounded-corner/
+ * Dark color theme to match the look and feel of Ska Studios
+ * (C) Dave Voyles and Ska Studios, 2013
+ * --------------------------------------------------------------------------------------*/
+
+/* 
+[Overwrites
+ ----------------------------------------------*/
+
+.ui-body-c, .ui-overlay-c {
+    -ms-text-shadow: none;
+    -webkit-text-shadow: none;
+    text-shadow: none; 
+    font-size:14px;
+}
+
+/* Prevents truncation of header and footer, if text is too large to fit */
+.ui-header .ui-title, .ui-footer, body .ui-li .ui-li-desc, .ui-btn-text,  .ui-footer .ui-btn-inner, .ui-mini .ui-btn-inner {   
+   padding: 0;
+}
+
+/* Light font color on dark background */
+.ui-body-c, .ui-overlay-c{
+   color: rgb(355,355,355);   
+}
+
+.ui-title{
+margin-top:20px;   
+}
+.ui-header .ui-title{
+    padding-top: 5px;
+}
+
+
+/* 
+ [Buttons
+ ----------------------------------------------*/
+
+/* "Buy Now" buttons */
+.ui-body-c .ui-link:hover{
+    color: RGB(255,255,255);
+}
+
+.ui-body-c .ui-link{
+    color: RGB(255,255,255);
+}
+
+
+
+
+
+
+/*     
+[Games page
+ ----------------------------------------------*/
+.game-catalog-text-container {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	padding: 0px 15px 15px 15px;
+    margin-left: 20px;
+}
+
+.game-catalog-container {
+	position: relative;
+}
+
+.margin-top-item{
+    padding-top:40px;
+}
+
+.XBLA-padding{
+    padding-top:10px
+}
+
+/* Good for dark colors */
+/*
+.btn-primary {
+    border-color: rgba(0, 0, 0, 0.65);
+
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); 
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+    background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); 
+}
+*/
+
+.btn-primary {
+    border-color: rgba(0, 0, 0, 0.65);
+
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.65)), color-stop(100%,rgba(0,0,0,0))); 
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); 
+    background: -o-linear-gradient(top, rgba(255,255,255,255.3) 0%,rgba(255,255,255,0) 100%); 
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); 
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); 
+}
+
+#buy-now-btn {
+	margin-top: 20px;
+}
+
+.rating-padding {
+	padding: 10px 0px;
+}
+
+.panel-title .panel-heading-light {
+	color: rgb(26, 196, 175);
+}
+#last-container{
+    margin-bottom:20px;
+}
+
+.panel-default > .panel-heading {
+        color: RGB(255,255,255);
+}
+
+
+/* 
+ [About Page
+ ----------------------------------------------*/
+.about-container {
+	bottom: 5px;
+	right: 5px;
+	padding: 0 15px 15px 0;
+	margin: 50px 0;
+}
+
+.label-padding {
+	margin: 10px 0;
+    
+    /* When going for a light background, uncomment this */
+	/*color: rgb(0,0,0);*/
+}
+
+.twitter-margin {
+	margin-top: 0px;
+}
+
+/* Prevents a light color from showing above the footer, when using Cyborg.css */
+.panel{
+    margin-bottom: 0px;
+}
+
+

@@ -1,4 +1,3 @@
-
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
@@ -20,25 +19,24 @@ $('#apache').click(function() {
 
 Application.prototype = {
     
-        run: function() {
-                var that = this,
-          	    console.log('run is called');
+    run: function() {
+        var that = this,
 
-                openExternalInAppBrowser 	= document.getElementById("openExternalInAppBrowser"),
-                openExternalInSystemBrowser = document.getElementById("openExternalInSystemBrowser");
-                      
-                openExternalInAppBrowser.addEventListener(	 "click", that.openExternalInAppBrowser);
-                openExternalInSystemBrowser.addEventListener("click", that.openExternalInSystemBrowser);
-        },
+        openExternalInAppBrowser    = document.getElementById("openExternalInAppBrowser"),
+        openExternalInSystemBrowser = document.getElementById("openExternalInSystemBrowser");
+              
+        openExternalInAppBrowser.addEventListener("click",    that.openExternalInAppBrowser);
+        openExternalInSystemBrowser.addEventListener("click", that.openExternalInSystemBrowser);
+        console.log('run is being called');
+    },
 
- 
-        openExternalInAppBrowser:  function () {
-            window.open("http://icenium.com", "_blank", 'location=yes');
-            console.log('open external in app browser');
-        },
-    
-        openExternalInSystemBrowser:function () {
-            window.open("http://wiki.apache.org/cordova/InAppBrowser", "_system");
-            console.log('open external in system browser');
-        }
+    openExternalInAppBrowser:  function () {
+        window.open("http://icenium.com", "_blank", 'location=yes');
+        console.log('open external in app browser');
+    },
+
+    openExternalInSystemBrowser:function () {
+        window.open("http://wiki.apache.org/cordova/InAppBrowser", "_system");
+        console.log('open external in system browser');
+    }
 }
