@@ -141,6 +141,12 @@ margin-top:20px;
 	margin-top: 0px;
 }
 
+.bold-text{
+    color: #888888;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* Prevents a light color from showing above the footer, when using Cyborg.css */
 .panel{
     margin-bottom: 0px;
