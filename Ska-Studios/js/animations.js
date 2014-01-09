@@ -16,29 +16,34 @@ function Application() {};
 
 Application.prototype = {    
     
-    
     /* Connects all event handlers for external URLs
      ********************************************************************************/
-    wireEventHandlers: function() {   
-        
+    wireEventHandlers: function() {         
         var self  = this;      
         var doc   = document;
-        var blog  = doc.getElementById('blog' );
-        var music = doc.getElementById('music');
-        var art   = doc.getElementById('art'  );
+        var blog  = doc.getElementsByClassName('blog' );
+        var music = doc.getElementsByClassName('music');
+        var art   = doc.getElementsByClassName('art'  );
         
-        blog .addEventListener('click', self._openBlogPage , false);
-        music.addEventListener('click', self._openMusicPage, false);
-        art  .addEventListener('click', self._openArtPage  , false);
+        for (var i = 0; i < blog.length; i++) {
+            blog .addEventListener('click', self._openBlogPage , false);
+        }
+        
+        for (var i = 0; i < music.length; i++) {
+            music.addEventListener('click', self._openMusicPage, false);
+        }
+        
+        for (var i = 0; i < art.length; i++) {
+            art  .addEventListener('click', self._openArtPage  , false);
+        }
+    },
   
      /* footer and header to remain on page at all times, and in fixed location
      ********************************************************************************/
-    fixedHeaderAndFooter: function() {
-        
+    fixedHeaderAndFooter: function() {        
          // Grab header and footer from all pages    
-         //var $allPages   = $("div[data-role='page']"),
-         //var $allFooters = $("div[data-role='footer']"),
-         //    $allHeaders = $("div[data-role='header']");
+         var $allFooters = $("div[data-role='footer']"),
+             $allHeaders = $("div[data-role='header']");
                 
         // Forces the header and footer to always remain on the page, rather than disappearing
         $allHeaders.fixedtoolbar({ tapToggle: false });
@@ -49,7 +54,9 @@ Application.prototype = {
     /* Applies padding to top of screen to adjust for the iOS7 error
      * http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/
      ********************************************************************************/
-    _applyMarginToiOSHeader: function() {
+    _applyMarginToiOSHeader: function() {   
+        var $allHeaders = $("div[data-role='header']");
+        
         if (parseFloat(window.device.version) >= 7.0 ) {
             $allHeaders.css( "margin-top", "20px" );       
         }
@@ -65,7 +72,6 @@ Application.prototype = {
     },
     
     _openArtPage: function() {
-        window.open("http://ska-studios.com/the-art-unicorner/", "_blank"); 
-        
+        window.open("http://ska-studios.com/the-art-unicorner/", "_blank");        
     }    
 }
