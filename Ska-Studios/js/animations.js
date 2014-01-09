@@ -7,6 +7,7 @@
 document.addEventListener('deviceready', function () { 
     var app = new Application();
         app.wireEventHandlers(); 
+        app.wireBuyNowButtons();
         app.fixedHeaderAndFooter();
 });
 
@@ -19,23 +20,49 @@ Application.prototype = {
     /* Connects all event handlers for external URLs
      ********************************************************************************/
     wireEventHandlers: function() {         
-        var self  = this;      
-        var doc   = document;
-        var blog  = doc.getElementsByClassName('blog' );
-        var music = doc.getElementsByClassName('music');
-        var art   = doc.getElementsByClassName('art'  );
+        var self  = this,      
+            doc   = document,
+            blog  = doc.getElementsByClassName('blog' ),
+            music = doc.getElementsByClassName('music'),
+            art   = doc.getElementsByClassName('art'  );
         
+        // We have multiple footers (one for each page), so we need to loop through each
         for (var i = 0; i < blog.length; i++) {
-            blog .addEventListener('click', self._openBlogPage , false);
+            blog[i] .a
+ddEventListener('click', self._openBlogPage , false);
         }
         
-        for (var i = 0; i < music.length; i++) {
-            music.addEventListener('click', self._openMusicPage, false);
+        for (var j = 0; j < music.length; j++) {
+            music[j].addEventListener('click', self._openMusicPage, false);
         }
         
-        for (var i = 0; i < art.length; i++) {
-            art  .addEventListener('click', self._openArtPage  , false);
+        for (var k = 0; k < art.length; k++) {
+            art[k]  .addEventListener('click', self._openArtPage  , false);
         }
+    },
+    
+    /* Connects all event handlers for external URLs for "Buy Now" buttons
+    ********************************************************************************/
+    wireBuyNowButtons: function(){
+        var self          = this,
+            doc           = document,
+            charlieMurder = doc.getElementById('cm-btn'),
+            vampireSmile  = doc.getElementById('vs-btn'),
+            deadSamuai    = doc.getElementById('ds-btn'),
+            timeViking    = doc.getElementById('tv-btn'),
+            zp2kx         = doc.getElementById('zp2kx-btn'),
+            zp2k9         = doc.getElementById('zp2k9-btn'),
+            guitar        = doc.getElementById('guitar-btn'),
+            zombies       = doc.getElementById('zombies-btn'),
+            zombiesPhone  = doc.getElementById('zombies-phone-btn');
+        
+            charlieMurder.addEventListener('click', self._openCharlieMurderPage, false);
+        
+            
+      
+        
+        
+        
     },
   
      /* footer and header to remain on page at all times, and in fixed location
@@ -73,5 +100,41 @@ Application.prototype = {
     
     _openArtPage: function() {
         window.open("http://ska-studios.com/the-art-unicorner/", "_blank");        
-    }    
+    },    
+    
+    _openCharlieMurderPage: function() {
+        window.open("http://marketplace.xbox.com/en-US/Product/Charlie-Murder/66acd000-77fe-1000-9115-d80258410b83", "blank");
+    },
+    
+    _openVampireSmilePage: function() {
+        window.open("http://www.vampiresmile.com/", "blank");
+    },
+    
+    _openDeadSamuraiPage: function(){
+        window.open("http://marketplace.xbox.com/en-US/Product/The-Dishwasher/66acd000-77fe-1000-9115-d80258410902", "blank");
+    },
+    
+    _openTimeVikingPage: function(){
+        window.open( "http://marketplace.xbox.com/en-US/Product/TIME-VIKING-ANDSPACERAPTOR/66acd000-77fe-1000-9115-d80258550e08", "blank");
+    },
+    
+    _openZp2kxPage: function(){
+        window.open("http://marketplace.xbox.com/en-US/Product/ZP2KX-Zombies-Pterodactyls/66acd000-77fe-1000-9115-d80258550732?DownloadType=Game#LiveZone", "blank");
+    },
+    
+    _openZp2k9Page: function(){
+        window.open("http://marketplace.xbox.com/en-US/Product/ZP2K9/66acd000-77fe-1000-9115-d802585501ba", "blank");
+    },
+    
+    _openGuitarPage: function(){
+        window.open("", "blank");
+    },
+    
+     _openZombiesPage: function(){
+        window.open("", "blank");
+    },
+    
+    _openZombiesPhonePage: function(){
+        window.open("", "blank");
+    },
 }
