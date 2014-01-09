@@ -28,8 +28,7 @@ Application.prototype = {
         
         // We have multiple footers (one for each page), so we need to loop through each
         for (var i = 0; i < blog.length; i++) {
-            blog[i] .a
-ddEventListener('click', self._openBlogPage , false);
+            blog[i] .addEventListener('click', self._openBlogPage , false);
         }
         
         for (var j = 0; j < music.length; j++) {
@@ -46,23 +45,25 @@ ddEventListener('click', self._openBlogPage , false);
     wireBuyNowButtons: function(){
         var self          = this,
             doc           = document,
-            charlieMurder = doc.getElementById('cm-btn'),
-            vampireSmile  = doc.getElementById('vs-btn'),
-            deadSamuai    = doc.getElementById('ds-btn'),
-            timeViking    = doc.getElementById('tv-btn'),
-            zp2kx         = doc.getElementById('zp2kx-btn'),
-            zp2k9         = doc.getElementById('zp2k9-btn'),
-            guitar        = doc.getElementById('guitar-btn'),
-            zombies       = doc.getElementById('zombies-btn'),
+            charlieMurder = doc.getElementById('cm-btn'           ),
+            vampireSmile  = doc.getElementById('vs-btn'           ),
+            deadSamurai   = doc.getElementById('ds-btn'           ),
+            timeViking    = doc.getElementById('tv-btn'           ),
+            zp2kx         = doc.getElementById('zp2kx-btn'        ),
+            zp2k9         = doc.getElementById('zp2k9-btn'        ),
+            guitar        = doc.getElementById('guitar-btn'       ),
+            zombies       = doc.getElementById('zombies-btn'      ),    
             zombiesPhone  = doc.getElementById('zombies-phone-btn');
         
             charlieMurder.addEventListener('click', self._openCharlieMurderPage, false);
-        
-            
-      
-        
-        
-        
+            vampireSmile .addEventListener('click', self._openVampireSmilePage,  false);
+            deadSamurai  .addEventListener('click', self._openDeadSamuraiPage,   false);
+            timeViking   .addEventListener('click', self._openTimeVikingPage,    false);
+            zp2kx        .addEventListener('click', self._openZp2kxPage,         false);
+            zp2k9        .addEventListener('click', self._openZp2k9Page,         false);
+            guitar       .addEventListener('click', self._openGuitarPage,        false);
+            zombies      .addEventListener('click', self._openZombiesPage,       false);
+            zombiesPhone .addEventListener('click', self._openZombiesPhonePage,  false);        
     },
   
      /* footer and header to remain on page at all times, and in fixed location
@@ -110,8 +111,7 @@ ddEventListener('click', self._openBlogPage , false);
         window.open("http://www.vampiresmile.com/", "blank");
     },
     
-    _openDeadSamuraiPage: function(){
-        window.open("http://marketplace.xbox.com/en-US/Product/The-Dishwasher/66acd000-77fe-1000-9115-d80258410902", "blank");
+    _openDeadSamuraiPage: function()"http://marketplace.xbox.com/en-US/Product/ZP2KX-Zombies-Pterodactyls/66acd000-77fe-1000-9115-d80258550732?DownloadType=Game#LiveZone"00-77fe-1000-9115-d80258410902", "blank");
     },
     
     _openTimeVikingPage: function(){
@@ -127,14 +127,14 @@ ddEventListener('click', self._openBlogPage , false);
     },
     
     _openGuitarPage: function(){
-        window.open("", "blank");
+        window.open("http://marketplace.xbox.com/en-US/Product/ZSX4-Guitarpocalypse/66acd000-77fe-1000-9115-d80258550129", "blank");
     },
     
      _openZombiesPage: function(){
-        window.open("", "blank");
+        window.open("http://marketplace.xbox.com/en-US/Product/I-MAED-A-GAM3-W1TH-Z0MB1ES-1/66acd000-77fe-1000-9115-d802585502a6", "blank");
     },
     
     _openZombiesPhonePage: function(){
-        window.open("", "blank");
+        window.open("http://www.windowsphone.com/en-us/store/app/z0mb1es-on-teh-ph0ne/eb52de06-ad4f-4433-b652-987255481eb0", "blank");
     },
 }
