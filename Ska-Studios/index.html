@@ -26,6 +26,7 @@
     <script src="js/jquery-ui-1.10.3.js">               </script>
     <script src="js/animations.js">                     </script>
     <script src="js/index.js">                          </script>
+    <script src="js/twitter.js">                        </script>
     <script src="cordova.js">                           </script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -188,19 +189,19 @@
                 
             </div> <!-- /#Windows-Phone-Container
 
-       <!-- NAV BAR
-        ================================================== -->
-        <div data-role="footer" data-id="footer" data-position="fixed">
-            <div data-role="navbar">
-                <ul>
-                    <li><a class="blog">Blog</a></li>
-                    <li><a href="#games-page" data-transition="slide">Games</a></li>
-                    <li><a class="music">Music</a></li>
-                    <li><a href="#about-page" data-transition="slide">About Us</a></li>
-                    <li><a class="art">Art</a></li>
-                </ul>
-            </div><!-- /navbar -->
-        </div><!-- /footer -->
+               <!-- NAV BAR
+            ================================================== -->
+            <div data-role="footer" data-id="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="blog">Blog</a></li>
+                        <li><a href="#games-page" data-transition="slide">Games</a></li>
+                        <li><a class="music">Music</a></li>
+                        <li><a href="#about-page" data-transition="slide">About Us</a></li>
+                        <li><a class="art">Art</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
                 
     </div> <!-- /Games-page -->
 
@@ -297,21 +298,74 @@
 
         </div> <!-- /About -->
 
-       <!-- NAV BAR
-        ================================================== -->
-        <div data-role="footer" data-id="footer" data-position="fixed">
-            <div data-role="navbar">
-                <ul>
-                    <li><a class="blog">Blog</a></li>
-                    <li><a href="#games-page" data-transition="slide">Games</a></li>
-                    <li><a class="music">Music</a></li>
-                    <li><a href="#about-page" data-transition="slide">About Us</a></li>
-                    <li><a class="art">Art</a></li>
-                </ul>
-            </div><!-- /navbar -->
-        </div><!-- /footer -->
+               <!-- NAV BAR
+            ================================================== -->
+            <div data-role="footer" data-id="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="blog">Blog</a></li>
+                        <li><a href="#games-page" data-transition="slide">Games</a></li>
+                        <li><a class="music">Music</a></li>
+                        <li><a href="#about-page" data-transition="slide">About Us</a></li>
+                        <li><a class="art">Art</a></li>
+                        <li><a href="#twitter-page" class="twitter">Twit</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
         
     </div> <!-- /about-page -->
+    
+    
+    
+   <!--Twitter PAGE
+    ================================================== -->
+    <div id="twitter-page" data-role="page" class="main container">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="arrow-l" data-role="button" data-rel=back>Back</a>
+            <h1>Twitter</h1>
+        </div><!-- /header -->
+        
+           <div data-role="header" data-position="inline">
+                <h1>jQuery Mobile Twitter App</h1>
+            </div>
+     
+            <div style="padding-left:1%;">
+                    <input type="search" name="tuser" id="tuser" value="" width="3"/>
+                    <a data-inline="true" data-role="button" href="#" data-theme="c" class="ui-btn ui-btn-inline ui-btn-corner-all ui-shadow ui-btn-up-c" onClick="javascript:getTweets()"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Get Tweets</span></span></a>
+            </div>
+     
+            <div style="padding-left:1%;">
+                <div class="content-primary"> 
+                    <ul data-role="listview" data-inset="true" id="tweets">
+                    </ul>
+                </div>    
+            </div>
+     
+            <br>
+            <div data-role="header" data-position="inline">
+                <h1></h1>
+            </div>
+        
+               <!-- NAV BAR
+            ================================================== -->
+            <div data-role="footer" data-id="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="blog">Blog</a></li>
+                        <li><a href="#games-page" data-transition="slide">Games</a></li>
+                        <li><a class="music">Music</a></li>
+                        <li><a href="#about-page" data-transition="slide">About Us</a></li>
+                        <li><a class="art">Art</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        
+        </div> <!-- /Twitter Page -->
+    
+    
+    
+    
 
 </body>
 </html>
