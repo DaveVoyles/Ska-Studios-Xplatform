@@ -7,11 +7,20 @@
 [Overwrites
  ----------------------------------------------*/
 
+
+/* larger text size for header */
+.ui-header .ui-title{
+    font-size: 20px;
+}
+
+
+
 .ui-body-c, .ui-overlay-c {
     -ms-text-shadow: none;
     -webkit-text-shadow: none;
     text-shadow: none; 
     font-size:14px;
+    background:#000; /*set dark background */
 }
 
 /* Prevents truncation of header and footer, if text is too large to fit */
@@ -25,7 +34,7 @@
 }
 
 .ui-title{
-margin-top:20px;   
+    margin-top:20px;   
 }
 .ui-header .ui-title{
     padding-top: 5px;

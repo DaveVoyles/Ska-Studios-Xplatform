@@ -104,29 +104,30 @@ Application.prototype = {
     },    
     
     _openCharlieMurderPage: function() {
-        window.open("http://marketplace.xbox.com/en-US/Product/Charlie-Murder/66acd000-77fe-1000-9115-d80258410b83", "blank");
+        window.open('http://marketplace.xbox.com/en-US/Product/Charlie-Murder/66acd000-77fe-1000-9115-d80258410b83', "blank");
     },
     
     _openVampireSmilePage: function() {
         window.open("http://www.vampiresmile.com/", "blank");
     },
     
-    _openDeadSamuraiPage: function()"http://marketplace.xbox.com/en-US/Product/ZP2KX-Zombies-Pterodactyls/66acd000-77fe-1000-9115-d80258550732?DownloadType=Game#LiveZone"00-77fe-1000-9115-d80258410902", "blank");
+    _openDeadSamuraiPage: function() {
+         window.open('http://marketplace.xbox.com/en-US/Product/ZP2KX-Zombies-Pterodactyls/66acd000-77fe-1000-9115-d80258550732?DownloadType=Game#LiveZone"00-77fe-1000-9115-d80258410902', "blank");
     },
     
-    _openTimeVikingPage: function(){
+    _openTimeVikingPage: function() {
         window.open( "http://marketplace.xbox.com/en-US/Product/TIME-VIKING-ANDSPACERAPTOR/66acd000-77fe-1000-9115-d80258550e08", "blank");
     },
     
-    _openZp2kxPage: function(){
+    _openZp2kxPage: function() {
         window.open("http://marketplace.xbox.com/en-US/Product/ZP2KX-Zombies-Pterodactyls/66acd000-77fe-1000-9115-d80258550732?DownloadType=Game#LiveZone", "blank");
     },
     
-    _openZp2k9Page: function(){
+    _openZp2k9Page: function() {
         window.open("http://marketplace.xbox.com/en-US/Product/ZP2K9/66acd000-77fe-1000-9115-d802585501ba", "blank");
     },
     
-    _openGuitarPage: function(){
+    _openGuitarPage: function() {
         window.open("http://marketplace.xbox.com/en-US/Product/ZSX4-Guitarpocalypse/66acd000-77fe-1000-9115-d80258550129", "blank");
     },
     
