@@ -1,4 +1,4 @@
-/* Creates animations for introducing / removing objects on page
+/* Connects event handlers for URLs
  * ©Dave Voyles & Ska Studios, 2013
  */
 
@@ -8,6 +8,7 @@ document.addEventListener('deviceready', function () {
     var app = new Application();
         app.wireEventHandlers(); 
         app.wireBuyNowButtons();
+        app.wireTwitterButtons();
         app.fixedHeaderAndFooter();
 });
 
@@ -20,13 +21,13 @@ Application.prototype = {
     /* Connects all event handlers for external URLs
      ********************************************************************************/
     wireEventHandlers: function() {         
-        var self  = this,      
-            doc   = document,
-            blog  = doc.getElementsByClassName('blog' ),
-            music = doc.getElementsByClassName('music'),
-            art   = doc.getElementsByClassName('art'  );
+        var self            = this,      
+            doc             = document,
+            blog            = doc.getElementsByClassName('blog'           ),
+            music           = doc.getElementsByClassName('music'          ),
+            art             = doc.getElementsByClassName('art'            );
         
-        // We have multiple footers (one for each page), so we need to loop through each
+        // We have multiple footers (one for each page), so we need to loop through each, and apply the link
         for (var i = 0; i < blog.length; i++) {
             blog[i] .addEventListener('click', self._openBlogPage , false);
         }
@@ -65,6 +66,21 @@ Application.prototype = {
             zombies      .addEventListener('click', self._openZombiesPage,       false);
             zombiesPhone .addEventListener('click', self._openZombiesPhonePage,  false);        
     },
+    
+    wireTwitterButtons: function(){
+        var self            = this,
+            doc             = document,
+            jamesTwitter    = doc.getElementById('jamesTwitter'   ),
+            michelleTwitter = doc.getElementById('michelleTwitter'),
+            dustinTwitter   = doc.getElementById('dustinTwitter'  ),
+            skaTwitter      = doc.getElementById('skaTwitter'     );
+        
+            jamesTwitter   .addEventListener('click', self._openJamesTwitterPage,    false),
+            michelleTwitter.addEventListener('click', self._openMichelleTwitterPage, false),
+            dustinTwitter  .addEventListener('click', self._openDustinTwiterPage,    false),
+            skaTwitter     .addEventListener('click', self._openSkaTwitterPage,      false);
+
+    },
   
      /* footer and header to remain on page at all times, and in fixed location
      ********************************************************************************/
@@ -74,6 +90,7 @@ Application.prototype = {
              $allHeaders = $("div[data-role='header']");
                 
         // Forces the header and footer to always remain on the page, rather than disappearing
+        // If Toggle: true, bars disappear after a few seconds
         $allHeaders.fixedtoolbar({ tapToggle: false });
         $allFooters.fixedtoolbar({ tapToggle: false });     
     },
@@ -90,10 +107,11 @@ Application.prototype = {
         }
     },      
 
+    /* Opens links in a new windows
+     ********************************************************************************/
     _openMusicPage: function() {
         window.open("http://music.ska-studios.com/", "_blank");
     },
-  
     
     _openBlogPage: function() {
         window.open("http://ska-studios.com/", "_blank");    
@@ -102,6 +120,22 @@ Application.prototype = {
     _openArtPage: function() {
         window.open("http://ska-studios.com/the-art-unicorner/", "_blank");        
     },    
+    
+    _openJamesTwitterPage: function() {
+        window.open("http://www.twitter.com/jamezila",    "_blank");
+    },
+    
+    _openMichelleTwitterPage: function() {
+        window.open("http://www.twitter.com/shelldragon", "_blank");
+    },
+    
+    _openDustinTwiterPage: function() {
+        window.open("http://www.twitter.com/superdunner", "_blank");
+    },
+    
+    _openSkaTwitterPage: function() {
+        window.open("http://www.twitter.com/skastudios", "_blank");
+    },
     
     _openCharlieMurderPage: function() {
         window.open('http://marketplace.xbox.com/en-US/Product/Charlie-Murder/66acd000-77fe-1000-9115-d80258410b83', "blank");
@@ -131,11 +165,11 @@ Application.prototype = {
         window.open("http://marketplace.xbox.com/en-US/Product/ZSX4-Guitarpocalypse/66acd000-77fe-1000-9115-d80258550129", "blank");
     },
     
-     _openZombiesPage: function(){
+     _openZombiesPage: function() {
         window.open("http://marketplace.xbox.com/en-US/Product/I-MAED-A-GAM3-W1TH-Z0MB1ES-1/66acd000-77fe-1000-9115-d802585502a6", "blank");
     },
     
-    _openZombiesPhonePage: function(){
+    _openZombiesPhonePage: function() {
         window.open("http://www.windowsphone.com/en-us/store/app/z0mb1es-on-teh-ph0ne/eb52de06-ad4f-4433-b652-987255481eb0", "blank");
     },
 }
