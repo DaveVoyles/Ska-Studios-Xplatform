@@ -17,7 +17,8 @@ Use this as a template to get started with your own application. Remove some bit
 
 ###Features
  - Runs on Win8, Win Phone 8, iOS, Android, & Browsers
- - jQuery mobile for responsive design
+ - jQuery mobile for speed and navigation between pages
+ - Bootstrap for responsive web design
  - All done on 1 page of HTML
  - No need for multiple IDEs 
  - Emulating and testing of dozens of deviecs from within the IDE
