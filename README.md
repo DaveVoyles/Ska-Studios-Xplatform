@@ -39,18 +39,18 @@ Use this as a template to get started with your own application. Remove some bit
 
 ### Setup
 
- 1.  Download the source [from GitHub][3]
+ 1.  Download the source [from GitHub][3] ![1](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/1.png)
  2.  Unzip the folder, and put the *Ska-Studios* folder on your desktop.
  3.  Download & install the [Intel XDK](http://xdk-software.intel.com/)
  3.  In the top-right corner, log-in or create a new Intel account.
- (add screenshot here)
+ ![2](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/3.gif)
  4.  On your phone, download the **Intel App Preview** app from your device's marketplace *(Apple App Store, Google Play, Windows Store).*
 
 ### Opening the project
  3. Launch the XDK. In the top-left corner, look for *Projects -> New Project*
- (add screenshot here)
+ ![4](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/4.gif)
  4. Click on *Import an Existing App*
- (add screenshot here)
+ ![5](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/5.gif)
  5. Open the Ska-Studios folder on your desktop
  6. Name the project
  (add screenshot here)
