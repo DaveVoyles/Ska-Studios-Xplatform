@@ -52,9 +52,10 @@ Use this as a template to get started with your own application. Remove some bit
  4. Click on *Import an Existing App*
  ![5](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/5.gif)
  5. Open the Ska-Studios folder on your desktop
+ ![6](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/6.gif)
  6. Name the project
- (add screenshot here)
  7. You will now have a working project to build from. Start with Index.html
+![7](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/7.gif)
 
 ### Emulating the app in other devices
 1. With your code open, on the top of the screen look for the Emulate tab 
@@ -73,11 +74,10 @@ Use this as a template to get started with your own application. Remove some bit
 
 ### Building for a device
 1. With the IDE open, click on the **BUILD** tab
-(add screenshot here)
 2. Select the device that you want to build for
-(add screenshot here)
+![8](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/8.gif)
 3. Follow the instructions for each platform, and include the appropriate image sizes
-(PICK A PLATFORM TO WALK THROUGH)
+![9](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/9.gif)
 
 ----------
 
