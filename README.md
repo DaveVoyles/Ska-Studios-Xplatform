@@ -40,8 +40,7 @@ Use this as a template to get started with your own application. Remove some bit
 ### Setup
 
  1.  Download the source [from GitHub][3]
- 2.  Unzip the folder, and put the *Ska-Studios* folder on your desktop, NOT the *Xplatform-master* folder.
- (add screenshot here)
+ 2.  Unzip the folder, and put the *Ska-Studios* folder on your desktop.
  3.  Download & install the [Intel XDK](http://xdk-software.intel.com/)
  3.  In the top-right corner, log-in or create a new Intel account.
  (add screenshot here)
