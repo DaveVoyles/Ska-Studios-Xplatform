@@ -76,8 +76,12 @@ Use this as a template to get started with your own application. Remove some bit
 1. With the IDE open, click on the **BUILD** tab
 2. Select the device that you want to build for
 ![8](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/8.gif)
-3. Follow the instructions for each platform, and include the appropriate image sizes
+3. It will upload your project to the Intel servers
 ![9](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/9.gif)
+4. Follow the instructions for each platform, and include the appropriate image sizes. ![10](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/10.gif)
+![11](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/11.gif)
+
+
 
 ----------
 
