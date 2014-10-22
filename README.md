@@ -32,7 +32,7 @@ Use this as a template to get started with your own application. Remove some bit
  - Emulating and testing of dozens of deviecs from within the IDE
  - Deploy to your phone with one click
 
-###Requirements
+### Requirements
 - You can use any Cordova tool for this, but I prefer the [Intel XDK](http://xdk-software.intel.com/), as it works on a Mac or Windows. 
 - PC or Mac
 
@@ -41,8 +41,8 @@ Use this as a template to get started with your own application. Remove some bit
 
  1.  Download the source [from GitHub][3] ![1](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/1.png)
  2.  Unzip the folder, and put the *Ska-Studios* folder on your desktop.
- 3.  Download & install the [Intel XDK](http://xdk-software.intel.com/)
- 3.  In the top-right corner, log-in or create a new Intel account.
+ 3.  Download & install the [Intel XDK](http://xdk-software.intel.com/) (this may take a while)
+ 3.  Launch Intel XDK and In the top-right corner, log-in or create a new Intel account.
  ![2](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/3.gif)
  4.  On your phone, download the **Intel App Preview** app from your device's marketplace *(Apple App Store, Google Play, Windows Store).*
 
@@ -58,14 +58,13 @@ Use this as a template to get started with your own application. Remove some bit
 ![7](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/7.gif)
 
 ### Emulating the app in other devices
-1. With your code open, on the top of the screen look for the Emulate tab 
-(add screenshot here)
-2. Check the device type in the top-left corner to change for the device you want to test on
-(add screenshot here)
+1. With your code open, on the top of the screen look for the Emulate tab
+![13](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/13.gif)
+2. You can select the **device type** in the top-left corner to change for the device you want to test on
 
 ### Debugging the app on a physical device
 1.  With the IDE open, click on the **TEST** Tab on the top of the screen
-![13](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/13.gif)
+(add TEST screen shot here)
 2.  You will be asked to sync with the server. Click *Sync.*
 ![14](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/14.gif)
 3.  Scan the QR code on your computer, using your phone. This will automatically open the Intel App on your phone, and point it towards the URL that your app is hosted at.
