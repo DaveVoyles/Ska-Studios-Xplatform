@@ -113,16 +113,8 @@ Some friends in Seattle who make awesome video games. [Check out their titles](h
 ## Resources
 
 - [Power Point: How to build cross platform mobile apps](http://davevoyles.azurewebsites.net/speaking-engagements-power-points/)
-- [BizSpark, for free MSFT dev licenses and web hosting](http://davevoyles.azurewebsites.net/bizspark-free-software-
-- 
-- 
-- cloud-services-o/)
-- [Windows store 
-- 
-- 
-- 
-- 
-- image generator](http://wat-docs.azurewebsites.net/Tools)
+- [BizSpark, for free MSFT dev licenses and web hosting](http://davevoyles.azurewebsites.net/bizspark-free-software-)
+- [image generator](http://wat-docs.azurewebsites.net/Tools)
 - [E-mail me with questions](mailto:Dvoyles@microsoft.com "Dvoyles@microsoft.com")
 - [ jQuery mobile documentation](http://api.jquerymobile.com/)
 
