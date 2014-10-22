@@ -65,11 +65,11 @@ Use this as a template to get started with your own application. Remove some bit
 
 ### Debugging the app on a physical device
 1.  With the IDE open, click on the **TEST** Tab on the top of the screen
-(add screenshot here)
+![13](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/13.gif)
 2.  You will be asked to sync with the server. Click *Sync.*
-(add screenshot here)
+![14](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/14.gif)
 3.  Scan the QR code on your computer, using your phone. This will automatically open the Intel App on your phone, and point it towards the URL that your app is hosted at.
-(add screenshot here)
+![15](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/15.gif)
 4. Give it a few moments to open the app, download your file, and open the file.
 
 ### Building for a device
