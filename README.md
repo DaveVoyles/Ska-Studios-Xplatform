@@ -50,6 +50,7 @@ Use this as a template to get started with your own application. Remove some bit
  3. Launch the XDK. In the top-left corner, look for *Projects -> New Project*
  ![4](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/4.gif)
  4. Click on *Import an Existing App*
+ 
  ![5](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/5.gif)
  5. Open the Ska-Studios folder on your desktop
  ![6](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/6.gif)
@@ -68,6 +69,7 @@ Use this as a template to get started with your own application. Remove some bit
 2.  You will be asked to sync with the server. Click *Sync.*
 ![14](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/14.gif)
 3.  Scan the QR code on your computer, using your phone. This will automatically open the Intel App on your phone, and point it towards the URL that your app is hosted at.
+
 ![15](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/15.gif)
 4. Give it a few moments to open the app, download your file, and open the file.
 
@@ -84,7 +86,7 @@ Use this as a template to get started with your own application. Remove some bit
 
 ----------
 
-##FAQ
+## FAQ
 **Why do I need to create an account?**
 
 Your app is stored locally on your own machine, as well as Intel's servers. When you deploy your app to a physical device, it is connecting via a URL, which is a link to your app on Intel's servers.
@@ -111,8 +113,16 @@ Some friends in Seattle who make awesome video games. [Check out their titles](h
 ## Resources
 
 - [Power Point: How to build cross platform mobile apps](http://davevoyles.azurewebsites.net/speaking-engagements-power-points/)
-- [BizSpark, for free MSFT dev licenses and web hosting](http://davevoyles.azurewebsites.net/bizspark-free-software-cloud-services-o/)
-- [Windows store image generator](http://wat-docs.azurewebsites.net/Tools)
+- [BizSpark, for free MSFT dev licenses and web hosting](http://davevoyles.azurewebsites.net/bizspark-free-software-
+- 
+- 
+- cloud-services-o/)
+- [Windows store 
+- 
+- 
+- 
+- 
+- image generator](http://wat-docs.azurewebsites.net/Tools)
 - [E-mail me with questions](mailto:Dvoyles@microsoft.com "Dvoyles@microsoft.com")
 - [ jQuery mobile documentation](http://api.jquerymobile.com/)
 
