@@ -5,7 +5,7 @@
 ----------
 ### Objective
 
-This lab goes through the process of packaging up the (insert the application and link to walk through) as an app store installable package for (PICK A PLATFORM). With these tools you can write an application that works for iOS, Andriod and Windows Phone/8.
+This lab goes through the process of packaging up this template as an app store installable package for Windows Phone. With these tools though, you can just as easily write an application that works for iOS, Andriod and Windows, by deploying to those platforms. It works on all of them!
 
 By the end of this lab you will be able to:
 
